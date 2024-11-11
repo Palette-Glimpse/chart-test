@@ -186,7 +186,7 @@ If an item of metadata is not used for querying, it should be set as an annotati
 | Name | Description                                                                                                                                                                      |
 | --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `app.kubernetes.io/name` | This should be the app name, reflecting the entire app. Usually `{{ template "name" . }}` is used for this. This is used by many Kubernetes manifests, and is not Helm-specific. |
-| `helm.sh/chart` | This should be the chart name and version: <code>{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}<\code>.                                                                          |
+| `helm.sh/chart` | This should be the chart name and version: <code>{{ .Chart.Name }}-{{ .Chart.Version \| replace "+" "_" }}<\code>.                                                                          |
 | `app.kubernetes.io/managed-by` | This should always be set to `{{ .Release.Service }}`. It is for finding all things managed by Helm.                                                                             |
 | `app.kubernetes.io/instance` | This should be the `{{ .Release.Name }}`. It aids in differentiating between different instances of the same application.                                                        |
 
