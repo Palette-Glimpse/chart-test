@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  mychart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-11-13T08:58:55.401892692Z"
+    description: A Helm chart for Kubernetes
+    digest: 02e5b8c349465571554bc6c8ed1944314449fe4128ca1cdd6c8f74c92e55f4a9
+    name: mychart
+    type: application
+    urls:
+    - https://github.com/Palette-Glimpse/chart-test/releases/download/mychart-0.1.0/mychart-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-11-13T08:58:55.195057037Z"
